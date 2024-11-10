@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT SHIVNATH</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: #fff;
+            animation: rgbBackground 8s infinite alternate;
+        }
+
+        /* RGB Background Animation */
+        @keyframes rgbBackground {
+            0% { background-color: #ff007f; }
+            25% { background-color: #00ff00; }
+            50% { background-color: #ff6600; }
+            75% { background-color: #ffcc00; }
+            100% { background-color: #ff007f; }
+        }
+
+        /* Header Section */
+        header {
+            background: #34495e;
+            padding: 120px 20px;
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 20px;
+            margin-bottom: 50px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            transition: all 0.5s ease;
+        }
+
+        section:hover {
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.8);
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .panel {
+            width: 80%;
+            padding: 30px;
+            margin: 15px 0;
+            background-color: #2c3e50;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .panel:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+        }
+
+        /* Shop Section */
+        .shop {
+            background-color: #e74c3c;
+            color: white;
+            border: 2px solid #e74c3c;
+        }
+
+        .shop ul {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* Skills & Bio Section */
+        .bio, .skills {
+            background-color: #16a085;
+            color: white;
+            border: 2px solid #16a085;
+        }
+
+        .contact-info {
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info:hover {
+            background-color: #2ecc71;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+        }
+
+        .cta {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            header {
+                font-size: 40px;
+                padding: 80px 20px;
+            }
+
+            .panel {
+                width: 90%;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            .shop ul {
+                font-size: 16px;
+            }
+
+            .cta {
+                font-size: 18px;
+                padding: 12px 20px;
+            }
+
+            .footer p {
+                font-size: 0.8em;
+            }
+        }
+
+        /* Small Screen Styles (Phones) */
+        @media (max-width: 480px) {
+            header {
+                font-size: 32px;
+                padding: 60px 15px;
+            }
+
+            .panel {
+                width: 100%;
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .shop ul {
+                font-size: 14px;
+            }
+
+            .cta {
+                font-size: 16px;
+                padding: 10px 18px;
+            }
+
+            .footer p {
+                font-size: 0.7em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    ABOUT SHIVNATH
+</header>
+
+<!-- Bio Section -->
+<section>
+    <div class="container">
+        <div class="panel bio">
+            <h2>About Shivnath</h2>
+            <p>Hi, I'm Shivnath! I'm passionate about technology and always looking for creative solutions to everyday problems. With expertise in coding and a deep interest in game development and blockchain, I'm constantly improving and exploring new ideas. Let's build the future together!</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section>
+    <div class="container">
+        <div class="panel skills">
+            <h2>Skills</h2>
+            <p>Here are some of the areas I specialize in:</p>
+            <ul>
+                <li>Java, C++, Python</li>
+                <li>Full-stack Web Development</li>
+                <li>Blockchain and Smart Contracts</li>
+                <li>Game Development (Unity, Minecraft Modding)</li>
+                <li>Forex and Crypto Trading</li>
+                <li>Machine Learning and AI</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Shop Section -->
+<section>
+    <div class="container">
+        <div class="panel shop">
+            <h2>Shop</h2>
+            <p>Check out the cool services I offer:</p>
+            <ul>
+                <li><strong>Discord Boosts:</strong> 14 boosts for ₹170</li>
+                <li><strong>Netflix Subscription:</strong> ₹80 for 2 months</li>
+                <li><strong>Custom Coding Projects:</strong> Personalized coding projects at affordable prices</li>
+                <li><strong>Crypto Trading Tips:</strong> Learn from my Forex & Crypto trading experience</li>
+                <li><strong>Game Development Services:</strong> Get your custom Minecraft mod or Unity game developed</li>
+            </ul>
+            <p>Feel free to reach out for any of these services!</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section>
+    <div class="container">
+        <div class="contact-info">
+            <h2>Contact Shivnath</h2>
+            <p>If you want to collaborate, ask questions, or just say hi, reach out to me:</p>
+            <ul>
+                <li>Email: <a href="mailto:shivnath234@gmail.com" style="color: white;">shivnath234@gmail.com</a></li>
+                <li>Discord: <strong>shivnath2543f</strong></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section>
+    <div class="footer">
+        <p>&copy; 2024 Shivnath. All Rights Reserved.</p>
+    </div>
+</section>
+
+</body>
+</html>
