@@ -1,242 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHIVNATH DEY THE OWNER OF WHATSAPP </title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #1a1a1a;
-            color: white;
-            scroll-behavior: smooth;
-        }
-        header {
-            background: #003366;
-            padding: 3rem 2rem;
-            text-align: center;
-            color: white;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 1rem;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #004080;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1.5rem;
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #00ccff;
-        }
-        .hero {
-            text-align: center;
-            padding: 4rem 2rem;
-            background: url("https://source.unsplash.com/1600x900/?finance,trade") no-repeat center center;
-            background-size: cover;
-            color: white;
-            text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-        }
-        .hero h2 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            font-size: 1.4rem;
-            margin-bottom: 2rem;
-        }
-        .hero button {
-            padding: 1rem 2rem;
-            font-size: 1.1rem;
-            background: #00ccff;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .hero button:hover {
-            background: #007bb5;
-        }
-        .section {
-            text-align: center;
-            margin: 2rem;
-        }
-        .about, .skills, .contact {
-            text-align: center;
-            margin: 2rem auto;
-            max-width: 1000px;
-        }
-        .about p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-        .skills ul {
-            list-style: none;
-            padding: 0;
-            font-size: 1.1rem;
-            text-align: left;
-            margin-top: 1rem;
-        }
-        .skills li {
-            margin: 0.5rem 0;
-        }
-        .contact-form {
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 1.5rem;
-            background: #00264d;
-            border-radius: 10px;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            margin-bottom: 1rem;
-            padding: 0.8rem;
-            border: 1px solid #00ccff;
-            border-radius: 5px;
-            background: #001122;
-            color: white;
-        }
-        .contact-form button {
-            width: 100%;
-            padding: 1rem;
-            background: #00ccff;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem 0;
-            background: #003366;
-            color: #00ccff;
-        }
-        footer .socials a {
-            color: #00ccff;
-            margin: 0 1rem;
-            font-size: 1.5rem;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        footer .socials a:hover {
-            color: white;
-        }
-
-        /* Chart responsiveness */
-        .live-chart {
-            text-align: center;
-            margin: 2rem 0;
-        }
-        .chart-wrapper {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-        }
-        .chart-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        @media (max-width: 768px) {
-            .hero h2 {
-                font-size: 2.5rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-            nav a {
-                font-size: 1rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Shivnath Dey - Forex Trading Expert</h1>
-        <p>Delivering tailored solutions to traders, banks, and institutions worldwide.</p>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#chart">Live Chart</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="hero">
-        <h2>Maximize Your Forex Trading Potential</h2>
-        <p>Expert insights and strategies to empower your financial decisions.</p>
-        <button>Get Started</button>
-    </div>
-
-    <section id="about" class="about">
-        <h2>About Shivnath</h2>
-        <p>Hi, I'm Shivnath! I'm passionate about technology and always looking for creative solutions to everyday problems. With expertise in coding and a deep interest in game development and blockchain, I'm constantly improving and exploring new ideas. Let's build the future together!</p>
-    </section>
-
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <p>I specialize in several areas, including:</p>
-        <ul>
-            <li>Programming Languages: Java, C++, Python</li>
-            <li>Web Development: Full-stack development</li>
-            <li>Blockchain: Smart contracts and decentralized apps</li>
-            <li>Game Development: Unity, Minecraft Modding</li>
-            <li>Trading: Forex and Crypto Trading</li>
-            <li>AI and Machine Learning: Implementing intelligent solutions</li>
-        </ul>
-    </section>
-
-    <section id="chart" class="live-chart">
-        <h2>Live EUR/USD Chart</h2>
-        <p>View the real-time chart with replay functionality to analyze historical data.</p>
-        <div class="chart-wrapper">
-            <iframe 
-                src="https://www.tradingview.com/widgetembed/?symbol=FX:EURUSD&interval=1&theme=dark&style=1&studies=MACD%40tv-basicstudies&toolbarbg=F1F3F6&saveimage=1&hideideas=1" 
-                frameborder="0" allowfullscreen></iframe>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">FOREX FUSIONr</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        SHIVNATH
+                        <span class="text-primary">DEY</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        kolkata · DumDum, Durganagar · 700065 ·
+                        <a href="mailto:shivnathdey234@gmail.com">shivnathdey234@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">I'm Shivnath Dey, a 17-year-old trader and algo seller with 5 years of experience in Minecraft server hosting and development. I own FeeCraft, a Minecraft hosting service, and ForexFusion, where I provide trading algorithms for forex trading. I leverage agile frameworks to enhance corporate strategies and enjoy playing chess and football in my free time..</p>
+                    <div class="social-icons">
+                         <a class="social-icon" href="#!"><i class="fab fa-github"></i>https://github.com/shivnath1234</a>
+                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f">https://www.facebook.com/share/16KnoZj3sQ/</i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Forex Trader</h3>
+                            <div class="subheading mb-3">Forex Fusion</div>
+                            <p>I’m Shivnath Dey, a 17-year-old trader with 3 years of experience in forex trading. I own ForexFusion, where I sell algorithmic trading bots at affordable prices..</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">DECEMBER 2024 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">FEECRAFT</h3>
+                            <div class="subheading mb-3">FEECRAFT NETWORK</div>
+                            <p>I own FeeCraft Network, where we offer a variety of services, including Nitro, CC promos, Crunchyroll, Netflix, and more. We also provide Minecraft hosting and servers, with plans to expand into ad selling and dropshipping in the future..</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">December 2022 - March 2024</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">G. H. Raisoni Public School Junior College</h3>
+                            <div class="subheading mb-3">12th</div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+                    </ul>
+                    <div class="subheading mb-3">Workflow</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Mobile-First, Responsive Design
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Browser Testing & Debugging
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Cross Functional Teams
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Agile Development & Scrum
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>Apart from being a trader and entrepreneur, I enjoy spending my time outdoors. In the winter, I am an avid skier and a novice ice climber. During the warmer months, I love mountain biking, free climbing, and kayaking.</p>
+                    <p class="mb-0">When I’m indoors, I enjoy watching a variety of sci-fi and fantasy movies and television shows. I also have a passion for cooking and spend a significant amount of my free time exploring the latest advancements in technology and trends in forex trading and web development.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Awarded a Funded Forex Trading Account (2022)
+                        </li>
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact Shivnath Dey</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>© 2024 Shivnath Dey | All Rights Reserved</p>
-        <div class="socials">
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
-    </footer>
-</body>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
+
