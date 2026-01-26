@@ -1,0 +1,8 @@
+{
+  "name": "Dikhava - Best Trendy Clothing & Footwear",
+  "description": "Premium clothing and footwear store located in North Dumdum, Kolkata. Featuring curated fashion and a smart AI stylist.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
